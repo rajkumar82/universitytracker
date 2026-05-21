@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T09:06:21.524882",
+  "last_updated": "2026-05-21T10:32:08.202914",
   "records": [
     {
       "id": "post_1tjbw1o",
@@ -5704,6 +5704,15 @@
       "user_id": "Faith-Lack-4571",
       "post_url": "https://www.reddit.com/r/sutd/comments/1rip69g/submitted_sutd_application_with_wrong_recommender/",
       "text_snippet": "Email admissions@sutd.edu.sg with the correct information for the fields that need to be amended. They should update your application and get back to you within a week or so, as they did for me",
+      "topics": {
+        "Admission Process": "Neutral"
+      }
+    },
+    {
+      "id": "post_1tjeo56",
+      "user_id": "Big_Physics_6306",
+      "post_url": "https://www.reddit.com/r/sutd/comments/1tjeo56/csd_applicants_interviewed_in_may_are_u_guys/",
+      "text_snippet": "&amp;#x200B;\n\nHi everyone,\n\nSince last 2 days, I saw a few people mentioning that they got into the CSD pillar at Singapore University of Technology and Design, and I was getting a bit curious/anxious about the timelines.\n\nI applied for CSD and had my interview on 7 May. I also came across a post/co",
       "topics": {
         "Admission Process": "Neutral"
       }

@@ -8,32 +8,124 @@
   "report_file": "data/report.html",
   "keywords": {
     "pillars": {
-      "CSE": ["\\bcse\\b", "computer science and engineering", "computer science engineering"],
-      "ECE": ["\\bece\\b", "electrical and computer engineering", "electrical engineering"],
-      "ME": ["\\bme\\b", "mechanical engineering"],
-      "CE": ["\\bce\\b", "civil engineering"],
-      "ChE": ["\\bche\\b", "chemical engineering", "biochemical engineering"],
-      "BSc": ["\\bbsc\\b", "b\\.sc", "bachelor of science", "bsc research"],
-      "BA": ["\\bba\\b", "b\\.a\\b", "bachelor of arts", "ba research"],
-      "BMS": ["\\bbms\\b", "business management", "business studies"],
-      "MBA": ["\\bmba\\b", "master of business"],
-      "MSc": ["\\bmsc\\b", "m\\.sc", "master of science"],
-      "PhD": ["\\bphd\\b", "ph\\.d", "doctorate", "doctoral program"]
+      "CSE": [
+        "\\bcse\\b",
+        "computer science and engineering",
+        "computer science engineering"
+      ],
+      "ECE": [
+        "\\bece\\b",
+        "electrical and computer engineering",
+        "electrical engineering"
+      ],
+      "ME": [
+        "\\bme\\b",
+        "mechanical engineering"
+      ],
+      "CE": [
+        "\\bce\\b",
+        "civil engineering"
+      ],
+      "ChE": [
+        "\\bche\\b",
+        "chemical engineering",
+        "biochemical engineering"
+      ],
+      "BSc": [
+        "\\bbsc\\b",
+        "b\\.sc",
+        "bachelor of science",
+        "bsc research"
+      ],
+      "BA": [
+        "\\bba\\b",
+        "b\\.a\\b",
+        "bachelor of arts",
+        "ba research"
+      ],
+      "BMS": [
+        "\\bbms\\b",
+        "business management",
+        "business studies"
+      ],
+      "MBA": [
+        "\\bmba\\b",
+        "master of business"
+      ],
+      "MSc": [
+        "\\bmsc\\b",
+        "m\\.sc",
+        "master of science"
+      ],
+      "PhD": [
+        "\\bphd\\b",
+        "ph\\.d",
+        "doctorate",
+        "doctoral program"
+      ]
     },
     "scholarships": {
-      "Band A (100%)": ["band a", "100% tuition", "full tuition waiver", "full scholarship"],
-      "Band B (75%)": ["band b", "75% tuition", "75% waiver"],
-      "Band C (50%)": ["band c", "50% tuition", "50% waiver"],
-      "School Topper": ["school topper scholarship", "class 12 topper", "topper scholarship"],
-      "Need-based": ["need.?based", "financial aid", "income.{1,10}scholarship"],
-      "Sports": ["sports scholarship", "sports quota"],
-      "Women in BTech": ["women.{1,10}btech", "women.{1,10}scholarship", "female.{1,10}scholarship"],
-      "Armed Forces": ["armed forces", "defence scholarship", "military scholarship"],
-      "None": ["no scholarship", "self.?fund", "without scholarship", "paying full", "full fees"]
+      "Band A (100%)": [
+        "band a",
+        "100% tuition",
+        "full tuition waiver",
+        "full scholarship"
+      ],
+      "Band B (75%)": [
+        "band b",
+        "75% tuition",
+        "75% waiver"
+      ],
+      "Band C (50%)": [
+        "band c",
+        "50% tuition",
+        "50% waiver"
+      ],
+      "School Topper": [
+        "school topper scholarship",
+        "class 12 topper",
+        "topper scholarship"
+      ],
+      "Need-based": [
+        "need.?based",
+        "financial aid",
+        "income.{1,10}scholarship"
+      ],
+      "Sports": [
+        "sports scholarship",
+        "sports quota"
+      ],
+      "Women in BTech": [
+        "women.{1,10}btech",
+        "women.{1,10}scholarship",
+        "female.{1,10}scholarship"
+      ],
+      "Armed Forces": [
+        "armed forces",
+        "defence scholarship",
+        "military scholarship"
+      ],
+      "None": [
+        "no scholarship",
+        "self.?fund",
+        "without scholarship",
+        "paying full",
+        "full fees"
+      ]
     },
     "nationalities": {
-      "Indian": ["\\bindian\\b", "india", "\\bdomestic\\b", "nri"],
-      "International": ["international", "foreigner", "overseas", "abroad"]
+      "Indian": [
+        "\\bindian\\b",
+        "india",
+        "\\bdomestic\\b",
+        "nri"
+      ],
+      "International": [
+        "international",
+        "foreigner",
+        "overseas",
+        "abroad"
+      ]
     },
     "statuses": {
       "Offered": [
@@ -74,64 +166,384 @@
   },
   "topics": {
     "Academics": {
-      "keywords": ["academics", "curriculum", "courses", "syllabus", "lectures", "modules", "academic"],
-      "positive": ["excellent", "great", "amazing", "rigorous", "strong", "interesting", "engaging", "love", "best"],
-      "negative": ["bad", "weak", "boring", "outdated", "poor", "terrible", "useless", "waste", "disappointing"]
+      "keywords": [
+        "academics",
+        "curriculum",
+        "courses",
+        "syllabus",
+        "lectures",
+        "modules",
+        "academic"
+      ],
+      "positive": [
+        "excellent",
+        "great",
+        "amazing",
+        "rigorous",
+        "strong",
+        "interesting",
+        "engaging",
+        "love",
+        "best"
+      ],
+      "negative": [
+        "bad",
+        "weak",
+        "boring",
+        "outdated",
+        "poor",
+        "terrible",
+        "useless",
+        "waste",
+        "disappointing"
+      ],
+      "proximity": 80
     },
     "Research": {
-      "keywords": ["research", "lab", "publication", "professor", "thesis", "project", "innovation"],
-      "positive": ["excellent", "great", "amazing", "strong", "cutting.?edge", "opportunities", "funded"],
-      "negative": ["bad", "weak", "limited", "poor", "no opportunities", "lack", "disappointing"]
+      "keywords": [
+        "research",
+        "lab",
+        "publication",
+        "professor",
+        "thesis",
+        "project",
+        "innovation"
+      ],
+      "positive": [
+        "excellent",
+        "great",
+        "amazing",
+        "strong",
+        "cutting.?edge",
+        "opportunities",
+        "funded"
+      ],
+      "negative": [
+        "bad",
+        "weak",
+        "limited",
+        "poor",
+        "no opportunities",
+        "lack",
+        "disappointing"
+      ],
+      "proximity": 80
     },
     "Faculty": {
-      "keywords": ["faculty", "professor", "prof", "instructor", "lecturer", "teacher", "mentor"],
-      "positive": ["excellent", "great", "helpful", "approachable", "experienced", "knowledgeable", "amazing", "supportive"],
-      "negative": ["bad", "terrible", "unhelpful", "arrogant", "poor", "incompetent", "rude"]
+      "keywords": [
+        "faculty",
+        "professor",
+        "prof",
+        "instructor",
+        "lecturer",
+        "teacher",
+        "mentor"
+      ],
+      "positive": [
+        "excellent",
+        "great",
+        "helpful",
+        "approachable",
+        "experienced",
+        "knowledgeable",
+        "amazing",
+        "supportive"
+      ],
+      "negative": [
+        "bad",
+        "terrible",
+        "unhelpful",
+        "arrogant",
+        "poor",
+        "incompetent",
+        "rude"
+      ],
+      "proximity": 80
     },
     "Food": {
-      "keywords": ["food", "canteen", "cafeteria", "dining", "eat", "meals", "mess"],
-      "positive": ["good", "great", "tasty", "variety", "affordable", "cheap", "delicious", "nice"],
-      "negative": ["bad", "terrible", "expensive", "bland", "limited", "awful", "overpriced", "disgusting"]
+      "keywords": [
+        "food",
+        "canteen",
+        "cafeteria",
+        "dining",
+        "eat",
+        "meals",
+        "mess"
+      ],
+      "positive": [
+        "good",
+        "great",
+        "tasty",
+        "variety",
+        "affordable",
+        "cheap",
+        "delicious",
+        "nice"
+      ],
+      "negative": [
+        "bad",
+        "terrible",
+        "expensive",
+        "bland",
+        "limited",
+        "awful",
+        "overpriced",
+        "disgusting"
+      ],
+      "proximity": 80
     },
     "Infrastructure": {
-      "keywords": ["infrastructure", "facilities", "campus", "building", "lab", "library", "gym", "classroom"],
-      "positive": ["excellent", "great", "modern", "well.?equipped", "amazing", "beautiful", "spacious", "new"],
-      "negative": ["bad", "poor", "outdated", "lacking", "terrible", "old", "broken", "cramped"]
+      "keywords": [
+        "infrastructure",
+        "facilities",
+        "campus",
+        "building",
+        "lab",
+        "library",
+        "gym",
+        "classroom"
+      ],
+      "positive": [
+        "excellent",
+        "great",
+        "modern",
+        "well.?equipped",
+        "amazing",
+        "beautiful",
+        "spacious",
+        "new"
+      ],
+      "negative": [
+        "bad",
+        "poor",
+        "outdated",
+        "lacking",
+        "terrible",
+        "old",
+        "broken",
+        "cramped"
+      ],
+      "proximity": 80
     },
     "Housing": {
-      "keywords": ["housing", "hostel", "dorm", "accommodation", "living", "room", "pg"],
-      "positive": ["good", "great", "comfortable", "affordable", "spacious", "clean", "nice"],
-      "negative": ["bad", "terrible", "expensive", "cramped", "dirty", "noisy", "poor", "overpriced"]
+      "keywords": [
+        "housing",
+        "hostel",
+        "dorm",
+        "accommodation",
+        "living",
+        "room",
+        "pg"
+      ],
+      "positive": [
+        "good",
+        "great",
+        "comfortable",
+        "affordable",
+        "spacious",
+        "clean",
+        "nice"
+      ],
+      "negative": [
+        "bad",
+        "terrible",
+        "expensive",
+        "cramped",
+        "dirty",
+        "noisy",
+        "poor",
+        "overpriced"
+      ],
+      "proximity": 80
     },
     "Placements": {
-      "keywords": ["placement", "job", "career", "recruit", "hiring", "internship", "employment", "salary", "package", "ctc"],
-      "positive": ["excellent", "great", "amazing", "strong", "high", "top", "good", "well.?paying"],
-      "negative": ["bad", "poor", "weak", "low", "terrible", "disappointing", "limited", "no placements"]
+      "keywords": [
+        "placement",
+        "job",
+        "career",
+        "recruit",
+        "hiring",
+        "internship",
+        "employment",
+        "salary",
+        "package",
+        "ctc"
+      ],
+      "positive": [
+        "excellent",
+        "great",
+        "amazing",
+        "strong",
+        "high",
+        "top",
+        "good",
+        "well.?paying"
+      ],
+      "negative": [
+        "bad",
+        "poor",
+        "weak",
+        "low",
+        "terrible",
+        "disappointing",
+        "limited",
+        "no placements"
+      ],
+      "proximity": 80
     },
     "Clubs & Fests": {
-      "keywords": ["club", "fest", "event", "society", "activity", "hackathon", "competition", "cultural"],
-      "positive": ["great", "amazing", "fun", "exciting", "variety", "active", "vibrant", "excellent"],
-      "negative": ["bad", "boring", "lack", "limited", "poor", "inactive", "no events", "terrible"]
+      "keywords": [
+        "club",
+        "fest",
+        "event",
+        "society",
+        "activity",
+        "hackathon",
+        "competition",
+        "cultural"
+      ],
+      "positive": [
+        "great",
+        "amazing",
+        "fun",
+        "exciting",
+        "variety",
+        "active",
+        "vibrant",
+        "excellent"
+      ],
+      "negative": [
+        "bad",
+        "boring",
+        "lack",
+        "limited",
+        "poor",
+        "inactive",
+        "no events",
+        "terrible"
+      ],
+      "proximity": 80
     },
     "Peer Quality": {
-      "keywords": ["peers", "classmates", "students", "batchmates", "cohort", "talent", "smart"],
-      "positive": ["smart", "talented", "brilliant", "motivated", "hardworking", "amazing", "excellent", "driven"],
-      "negative": ["bad", "demotivated", "poor", "average", "toxic", "unhelpful"]
+      "keywords": [
+        "peers",
+        "classmates",
+        "students",
+        "batchmates",
+        "cohort",
+        "talent",
+        "smart"
+      ],
+      "positive": [
+        "smart",
+        "talented",
+        "brilliant",
+        "motivated",
+        "hardworking",
+        "amazing",
+        "excellent",
+        "driven"
+      ],
+      "negative": [
+        "bad",
+        "demotivated",
+        "poor",
+        "average",
+        "toxic",
+        "unhelpful"
+      ],
+      "proximity": 80
     },
     "Workload": {
-      "keywords": ["workload", "stress", "assignments", "projects", "deadlines", "exams", "pressure"],
-      "positive": ["manageable", "balanced", "reasonable", "fair", "okay"],
-      "negative": ["heavy", "overwhelming", "stressful", "too much", "terrible", "insane", "burnout"]
+      "keywords": [
+        "workload",
+        "stress",
+        "assignments",
+        "projects",
+        "deadlines",
+        "exams",
+        "pressure"
+      ],
+      "positive": [
+        "manageable",
+        "balanced",
+        "reasonable",
+        "fair",
+        "okay"
+      ],
+      "negative": [
+        "heavy",
+        "overwhelming",
+        "stressful",
+        "too much",
+        "terrible",
+        "insane",
+        "burnout"
+      ],
+      "proximity": 80
     },
     "Scholarships": {
-      "keywords": ["scholarship", "financial aid", "fee waiver", "merit", "band a", "band b", "band c", "need.?based"],
-      "positive": ["generous", "great", "good", "helpful", "sufficient", "full", "amazing"],
-      "negative": ["low", "insufficient", "poor", "strict", "hard to get", "not enough", "disappointing"]
+      "keywords": [
+        "scholarship",
+        "financial aid",
+        "fee waiver",
+        "merit",
+        "band a",
+        "band b",
+        "band c",
+        "need.?based"
+      ],
+      "positive": [
+        "generous",
+        "great",
+        "good",
+        "helpful",
+        "sufficient",
+        "full",
+        "amazing"
+      ],
+      "negative": [
+        "low",
+        "insufficient",
+        "poor",
+        "strict",
+        "hard to get",
+        "not enough",
+        "disappointing"
+      ],
+      "proximity": 80
     },
     "Admission Process": {
-      "keywords": ["admission", "application", "interview", "selection", "offer", "response", "communication"],
-      "positive": ["smooth", "fast", "clear", "transparent", "quick", "easy", "good", "well.?organised"],
-      "negative": ["slow", "unclear", "confusing", "poor", "no response", "bad", "disorganised", "frustrating"]
+      "keywords": [
+        "admission",
+        "application",
+        "interview",
+        "selection",
+        "offer",
+        "response",
+        "communication"
+      ],
+      "positive": [
+        "smooth",
+        "fast",
+        "clear",
+        "transparent",
+        "quick",
+        "easy",
+        "good",
+        "well.?organised"
+      ],
+      "negative": [
+        "slow",
+        "unclear",
+        "confusing",
+        "poor",
+        "no response",
+        "bad",
+        "disorganised",
+        "frustrating"
+      ],
+      "proximity": 80
     }
   }
 }
