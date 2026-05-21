@@ -6,8 +6,8 @@ Scrapes Reddit to track admission offers, rejections, scholarships, and pillar b
 
 | University | Website | Report |
 |---|---|---|
-| SUTD | [sutd.edu.sg](https://www.sutd.edu.sg) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/sutd/data/report.html) |
-| Plaksha | [plaksha.org](https://plaksha.org) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/plaksha/data/report.html) |
+| SUTD | [sutd.edu.sg](https://www.sutd.edu.sg) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/universities/sutd/data/report.html) |
+| Plaksha | [plaksha.org](https://plaksha.org) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/universities/plaksha/data/report.html) |
 
 ## Setup
 
