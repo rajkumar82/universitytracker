@@ -63,5 +63,67 @@
         "waitlisted (at|by|for) plaksha"
       ]
     }
+  },
+  "topics": {
+    "Academics": {
+      "keywords": ["academics", "curriculum", "courses", "syllabus", "lectures", "modules", "academic"],
+      "positive": ["excellent", "great", "amazing", "rigorous", "strong", "interesting", "engaging", "love", "best"],
+      "negative": ["bad", "weak", "boring", "outdated", "poor", "terrible", "useless", "waste", "disappointing"]
+    },
+    "Research": {
+      "keywords": ["research", "lab", "publication", "professor", "thesis", "project", "innovation"],
+      "positive": ["excellent", "great", "amazing", "strong", "cutting.?edge", "opportunities", "funded"],
+      "negative": ["bad", "weak", "limited", "poor", "no opportunities", "lack", "disappointing"]
+    },
+    "Faculty": {
+      "keywords": ["faculty", "professor", "prof", "instructor", "lecturer", "teacher", "mentor"],
+      "positive": ["excellent", "great", "helpful", "approachable", "experienced", "knowledgeable", "amazing", "supportive"],
+      "negative": ["bad", "terrible", "unhelpful", "arrogant", "poor", "incompetent", "rude"]
+    },
+    "Food": {
+      "keywords": ["food", "canteen", "cafeteria", "dining", "eat", "meals", "mess"],
+      "positive": ["good", "great", "tasty", "variety", "affordable", "cheap", "delicious", "nice"],
+      "negative": ["bad", "terrible", "expensive", "bland", "limited", "awful", "overpriced", "disgusting"]
+    },
+    "Infrastructure": {
+      "keywords": ["infrastructure", "facilities", "campus", "building", "lab", "library", "gym", "classroom"],
+      "positive": ["excellent", "great", "modern", "well.?equipped", "amazing", "beautiful", "spacious", "new"],
+      "negative": ["bad", "poor", "outdated", "lacking", "terrible", "old", "broken", "cramped"]
+    },
+    "Housing": {
+      "keywords": ["housing", "hostel", "dorm", "accommodation", "living", "room", "pg"],
+      "positive": ["good", "great", "comfortable", "affordable", "spacious", "clean", "nice"],
+      "negative": ["bad", "terrible", "expensive", "cramped", "dirty", "noisy", "poor", "overpriced"]
+    },
+    "Placements": {
+      "keywords": ["placement", "job", "career", "recruit", "hiring", "internship", "employment", "salary", "package", "ctc"],
+      "positive": ["excellent", "great", "amazing", "strong", "high", "top", "good", "well.?paying"],
+      "negative": ["bad", "poor", "weak", "low", "terrible", "disappointing", "limited", "no placements"]
+    },
+    "Clubs & Fests": {
+      "keywords": ["club", "fest", "event", "society", "activity", "hackathon", "competition", "cultural"],
+      "positive": ["great", "amazing", "fun", "exciting", "variety", "active", "vibrant", "excellent"],
+      "negative": ["bad", "boring", "lack", "limited", "poor", "inactive", "no events", "terrible"]
+    },
+    "Peer Quality": {
+      "keywords": ["peers", "classmates", "students", "batchmates", "cohort", "talent", "smart"],
+      "positive": ["smart", "talented", "brilliant", "motivated", "hardworking", "amazing", "excellent", "driven"],
+      "negative": ["bad", "demotivated", "poor", "average", "toxic", "unhelpful"]
+    },
+    "Workload": {
+      "keywords": ["workload", "stress", "assignments", "projects", "deadlines", "exams", "pressure"],
+      "positive": ["manageable", "balanced", "reasonable", "fair", "okay"],
+      "negative": ["heavy", "overwhelming", "stressful", "too much", "terrible", "insane", "burnout"]
+    },
+    "Scholarships": {
+      "keywords": ["scholarship", "financial aid", "bursary", "fee waiver", "merit", "need.?based"],
+      "positive": ["generous", "great", "good", "helpful", "sufficient", "full", "amazing"],
+      "negative": ["low", "insufficient", "poor", "strict", "hard to get", "not enough", "disappointing"]
+    },
+    "Admission Process": {
+      "keywords": ["admission", "application", "interview", "selection", "offer", "response", "communication"],
+      "positive": ["smooth", "fast", "clear", "transparent", "quick", "easy", "good", "well.?organised"],
+      "negative": ["slow", "unclear", "confusing", "poor", "no response", "bad", "disorganised", "frustrating"]
+    }
   }
 }

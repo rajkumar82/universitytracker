@@ -57,5 +57,67 @@
         "i('ve| have) been wait.?listed"
       ]
     }
+  },
+  "topics": {
+    "Academics": {
+      "keywords": ["academics", "curriculum", "courses", "syllabus", "lectures", "modules", "academic"],
+      "positive": ["excellent", "great", "amazing", "rigorous", "strong", "interesting", "engaging", "love", "best"],
+      "negative": ["bad", "weak", "boring", "outdated", "poor", "terrible", "useless", "waste", "disappointing"]
+    },
+    "Research": {
+      "keywords": ["research", "urop", "lab", "publication", "professor", "phd", "thesis", "project"],
+      "positive": ["excellent", "great", "amazing", "strong", "cutting.?edge", "opportunities", "funded", "world.?class"],
+      "negative": ["bad", "weak", "limited", "poor", "no opportunities", "lack", "disappointing"]
+    },
+    "Faculty": {
+      "keywords": ["faculty", "professor", "prof", "instructor", "lecturer", "teacher", "staff"],
+      "positive": ["excellent", "great", "helpful", "approachable", "experienced", "knowledgeable", "amazing", "supportive"],
+      "negative": ["bad", "terrible", "unhelpful", "arrogant", "poor", "lazy", "incompetent", "rude"]
+    },
+    "Food": {
+      "keywords": ["food", "canteen", "cafeteria", "dining", "eat", "meals", "hawker", "restaurant"],
+      "positive": ["good", "great", "tasty", "variety", "affordable", "cheap", "delicious", "nice"],
+      "negative": ["bad", "terrible", "expensive", "bland", "limited", "awful", "overpriced", "disgusting"]
+    },
+    "Infrastructure": {
+      "keywords": ["infrastructure", "facilities", "campus", "building", "lab equipment", "library", "gym", "sports hall", "classroom"],
+      "positive": ["excellent", "great", "modern", "well.?equipped", "amazing", "state.?of.?the.?art", "beautiful", "spacious"],
+      "negative": ["bad", "poor", "outdated", "run.?down", "lacking", "terrible", "old", "broken", "cramped"]
+    },
+    "Housing": {
+      "keywords": ["housing", "hostel", "dorm", "accommodation", "living", "room", "hall of residence"],
+      "positive": ["good", "great", "comfortable", "affordable", "spacious", "clean", "nice", "well.?maintained"],
+      "negative": ["bad", "terrible", "expensive", "cramped", "dirty", "noisy", "poor", "overpriced"]
+    },
+    "Placements": {
+      "keywords": ["placement", "job", "career", "recruit", "hiring", "internship", "employment", "offer letter", "salary", "package"],
+      "positive": ["excellent", "great", "amazing", "strong", "high", "top", "good", "well.?paying", "reputed"],
+      "negative": ["bad", "poor", "weak", "low", "terrible", "disappointing", "limited", "lack", "no placements"]
+    },
+    "Clubs & Fests": {
+      "keywords": ["club", "fest", "event", "society", "activity", "hackathon", "competition", "cultural", "technical"],
+      "positive": ["great", "amazing", "fun", "exciting", "variety", "active", "vibrant", "excellent", "lots"],
+      "negative": ["bad", "boring", "lack", "limited", "poor", "inactive", "no events", "terrible"]
+    },
+    "Peer Quality": {
+      "keywords": ["peers", "classmates", "students", "batchmates", "cohort", "talent", "smart", "competitive"],
+      "positive": ["smart", "talented", "brilliant", "motivated", "hardworking", "amazing", "excellent", "driven", "supportive"],
+      "negative": ["bad", "demotivated", "poor", "average", "toxic", "competitive in bad way", "unhelpful"]
+    },
+    "Workload": {
+      "keywords": ["workload", "stress", "assignments", "projects", "deadlines", "exams", "pressure", "busy"],
+      "positive": ["manageable", "balanced", "reasonable", "fair", "not too bad", "okay"],
+      "negative": ["heavy", "overwhelming", "stressful", "too much", "terrible", "insane", "crushing", "burnout"]
+    },
+    "Scholarships": {
+      "keywords": ["scholarship", "financial aid", "bursary", "subsidy", "bond", "tuition grant"],
+      "positive": ["generous", "great", "good", "helpful", "sufficient", "bond.?free", "full", "amazing"],
+      "negative": ["low", "insufficient", "poor", "strict", "hard to get", "bond", "not enough", "disappointing"]
+    },
+    "Admission Process": {
+      "keywords": ["admission", "application", "interview", "selection", "offer letter", "response", "communication"],
+      "positive": ["smooth", "fast", "clear", "transparent", "quick", "easy", "good", "well.?organised"],
+      "negative": ["slow", "unclear", "confusing", "poor", "no response", "bad", "disorganised", "frustrating"]
+    }
   }
 }
