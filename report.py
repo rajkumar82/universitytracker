@@ -78,6 +78,7 @@ def generate(data, output_path="data/report.html", title="Admission Tracker"):
     waitlisted = sum(1 for r in records if r.get("status") == "Waitlisted")
     unknown = total - offered - rejected - waitlisted
 
+    offered_records = [r for r in records if r.get("status") == "Offered"]
     records_json = json.dumps(records, ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
@@ -102,6 +103,7 @@ def generate(data, output_path="data/report.html", title="Admission Tracker"):
   .panels{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:28px}}
   .panel{{background:#1e293b;border-radius:12px;padding:20px}}
   .panel h2{{font-size:.95rem;font-weight:600;margin-bottom:14px;color:#cbd5e1}}
+  .panel-sub{{font-size:.7rem;font-weight:400;color:#475569;margin-left:6px}}
   .bar-row{{display:flex;align-items:center;gap:10px;margin-bottom:10px}}
   .bar-label{{width:90px;font-size:.8rem;color:#cbd5e1;flex-shrink:0}}
   .bar-track{{flex:1;background:#334155;border-radius:4px;height:10px;overflow:hidden}}
@@ -139,16 +141,16 @@ def generate(data, output_path="data/report.html", title="Admission Tracker"):
 
 <div class="panels">
   <div class="panel">
-    <h2>By Pillar</h2>
-    {_bar_rows(records, "pillar", PILLAR_COLORS)}
+    <h2>By Pillar <span class="panel-sub">offered only</span></h2>
+    {_bar_rows(offered_records, "pillar", PILLAR_COLORS)}
   </div>
   <div class="panel">
-    <h2>By Scholarship</h2>
-    {_bar_rows(records, "scholarship")}
+    <h2>By Scholarship <span class="panel-sub">offered only</span></h2>
+    {_bar_rows(offered_records, "scholarship")}
   </div>
   <div class="panel">
-    <h2>By Nationality</h2>
-    {_bar_rows(records, "nationality")}
+    <h2>By Nationality <span class="panel-sub">offered only</span></h2>
+    {_bar_rows(offered_records, "nationality")}
   </div>
 </div>
 
