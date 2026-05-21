@@ -33,30 +33,6 @@ def save_sentiments(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def run_sentiment(records, topics, sentiment_data, reparse=False):
-    """Tag records not yet in sentiments. Returns count of newly tagged."""
-    if reparse:
-        sentiment_data["records"] = []
-
-    seen_ids = {r["id"] for r in sentiment_data["records"]}
-    added = 0
-    for r in records:
-        if r["id"] in seen_ids:
-            continue
-        tagged = analyze_record(r, topics)
-        if not tagged:
-            continue
-        sentiment_data["records"].append({
-            "id": r["id"],
-            "user_id": r.get("user_id", ""),
-            "post_url": r.get("post_url", ""),
-            "text_snippet": r.get("text_snippet", ""),
-            "topics": tagged,
-        })
-        added += 1
-    return added
-
-
 def run_folder(folder):
     inner_path = os.path.join(folder, "settings.json")
     with open(inner_path, "r", encoding="utf-8") as f:
@@ -78,11 +54,13 @@ def run_folder(folder):
     print(f"{'='*55}")
 
     data = load(data_file)
+    sentiment_data = load_sentiments(sentiment_file)
     scraped_threads = set(data.get("scraped_threads", []))
     total_added = 0
+    sentiment_added = 0
 
-    # reparse existing records with current keywords
-    if data["records"] and keywords:
+    # reparse all existing records on --reparse
+    if REPARSE:
         print(f"  Reparsing {len(data['records'])} existing records...")
         for r in data["records"]:
             updated = parse(r, keywords)
@@ -91,17 +69,51 @@ def run_folder(folder):
             r["nationality"] = updated["nationality"]
             r["status"] = updated["status"]
         save(data_file, data)
+        sentiment_data["records"] = []
         print(f"  Reparse done.")
+    elif data["records"] and keywords:
+        # always reparse to pick up keyword changes
+        for r in data["records"]:
+            updated = parse(r, keywords)
+            r["pillar"] = updated["pillar"]
+            r["scholarship"] = updated["scholarship"]
+            r["nationality"] = updated["nationality"]
+            r["status"] = updated["status"]
+        save(data_file, data)
+
+    sentiment_seen = {r["id"] for r in sentiment_data["records"]}
 
     def on_thread_done(thread_url, raw_records):
-        nonlocal total_added
+        nonlocal total_added, sentiment_added, sentiment_seen
+
+        # parse admission fields
         parsed = [parse(r, keywords) for r in raw_records if r.get("text", "").strip()]
         added = merge(data, parsed)
         mark_thread_scraped(data, thread_url)
         save(data_file, data)
+
+        # sentiment analysis on same batch
+        if topics:
+            for r in parsed:
+                if r["id"] in sentiment_seen:
+                    continue
+                tagged = analyze_record(r, topics)
+                if tagged:
+                    sentiment_data["records"].append({
+                        "id": r["id"],
+                        "user_id": r.get("user_id", ""),
+                        "post_url": r.get("post_url", ""),
+                        "text_snippet": r.get("text_snippet", ""),
+                        "topics": tagged,
+                    })
+                    sentiment_seen.add(r["id"])
+                    sentiment_added += 1
+            save_sentiments(sentiment_file, sentiment_data)
+            generate_sentiment(sentiment_data, sentiment_report_file, title=title)
+
         generate(data, report_file, title=title)
         total_added += added
-        print(f"    saved {added} new record(s) — {len(data['records'])} total")
+        print(f"    saved {added} record(s) | {sentiment_added} sentiment tags — {len(data['records'])} total")
 
     for url in urls:
         print(f"\nFetching: {url}")
@@ -115,21 +127,12 @@ def run_folder(folder):
         except Exception as e:
             print(f"  ! Error: {e}")
 
-    # final report
+    # final reports
     generate(data, report_file, title=title)
-
-    # sentiment
     if topics:
-        sentiment_data = load_sentiments(sentiment_file)
-        sentiment_added = run_sentiment(data["records"], topics, sentiment_data, reparse=REPARSE)
-        save_sentiments(sentiment_file, sentiment_data)
         generate_sentiment(sentiment_data, sentiment_report_file, title=title)
-        print(f"  Sentiment: {sentiment_added} new records tagged — {len(sentiment_data['records'])} total")
-        print(f"  Sentiment report: {sentiment_report_file}")
-    else:
-        print(f"  No topics defined — skipping sentiment")
 
-    print(f"\nDone — {total_added} new record(s) added")
+    print(f"\nDone — {total_added} new record(s), {sentiment_added} sentiment tags")
     print_summary(data["records"], total_added)
 
 
