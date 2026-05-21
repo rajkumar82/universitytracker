@@ -31,8 +31,19 @@ def run_folder(folder):
     data = load(data_file)
     scraped_threads = set(data.get("scraped_threads", []))
     total_added = 0
-
     keywords = settings.get("keywords", {})
+
+    # reparse all existing records with current keywords
+    if data["records"] and keywords:
+        print(f"  Reparsing {len(data['records'])} existing records with current keywords...")
+        for r in data["records"]:
+            updated = parse(r, keywords)
+            r["pillar"] = updated["pillar"]
+            r["scholarship"] = updated["scholarship"]
+            r["nationality"] = updated["nationality"]
+            r["status"] = updated["status"]
+        save(data_file, data)
+        print(f"  Reparse done.")
 
     def on_thread_done(thread_url, raw_records):
         nonlocal total_added
@@ -40,7 +51,7 @@ def run_folder(folder):
         added = merge(data, parsed)
         mark_thread_scraped(data, thread_url)
         save(data_file, data)
-        generate(data, report_file)
+        generate(data, report_file, title=settings.get("name", os.path.basename(folder).replace("_", " ").title()))
         total_added += added
         print(f"    saved {added} new record(s) — {len(data['records'])} total")
 

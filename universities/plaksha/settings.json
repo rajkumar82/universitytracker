@@ -38,18 +38,29 @@
         "i('m| am) (in|going to plaksha)",
         "got offered (a |an )?(seat|place|spot|scholarship)",
         "got (a |an )?(offer|admission offer|conditional offer)",
-        "plaksha (gave|sent|offered) me (a |an )?(offer|seat|place|spot)"
+        "plaksha (gave|sent|offered) me (a |an )?(offer|seat|place|spot)",
+        "got firm",
+        "got.{1,10}(admission|admit|offer).{1,10}(today|letter|mail|email)",
+        "admission (confirmed|secured|done|through)",
+        "got (selected|shortlisted|through)",
+        "converted.{1,20}plaksha",
+        "joining plaksha"
       ],
       "Rejected": [
         "i (got|was|have been) (rejected|rej)",
         "i did(n't| not) (get|receive) (an? )?(offer|admission)",
         "i (didn't|did not) get (in|into)",
         "(rejected|no offer) (from|by) plaksha",
-        "got (rejected|rej) (from|by) plaksha"
+        "got (rejected|rej) (from|by) plaksha",
+        "did not convert",
+        "couldn't convert",
+        "not selected"
       ],
       "Waitlisted": [
         "i (was|got|am) (put on |on the )?wait.?list",
-        "i('ve| have) been wait.?listed"
+        "i('ve| have) been wait.?listed",
+        "on the waitlist",
+        "waitlisted (at|by|for) plaksha"
       ]
     }
   }

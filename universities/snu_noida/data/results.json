@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T08:12:23.149498",
+  "last_updated": "2026-05-21T08:20:04.892550",
   "scraped_threads": [
     "https://www.reddit.com/r/snunoida/comments/1tjd2jh/shortlisted/",
     "https://www.reddit.com/r/snunoida/comments/1tj3yaf/ba_eco_from_either_sslascac_or_bsc_eco_hons_from/",
@@ -2144,7 +2144,7 @@
       "pillar": "MSc",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1tft4o2",
@@ -3292,7 +3292,7 @@
       "pillar": "ME",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_olypxmh",
@@ -3334,7 +3334,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_olwzsxr",
@@ -3544,7 +3544,7 @@
       "pillar": "CSE",
       "scholarship": "None",
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1td1eg4",
@@ -3964,7 +3964,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_olmvkv2",
@@ -4062,7 +4062,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oll9y8b",
@@ -4454,7 +4454,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oljt8d4",
@@ -4818,7 +4818,7 @@
       "pillar": "BMS",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1tapxxx",
@@ -4832,7 +4832,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_olerkhr",
@@ -5070,7 +5070,7 @@
       "pillar": "ME",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Rejected"
     },
     {
       "id": "comment_ol8o873",
@@ -5084,7 +5084,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1ta3q6t",
@@ -6078,7 +6078,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Rejected"
     },
     {
       "id": "comment_oksnetm",
@@ -6526,7 +6526,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oklm5s0",
@@ -7268,7 +7268,7 @@
       "pillar": "CSE",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_ok35tya",
@@ -7982,7 +7982,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_ojvi4rq",
@@ -8486,7 +8486,7 @@
       "pillar": "ECE",
       "scholarship": "Need-based",
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oji4gsf",
@@ -8640,7 +8640,7 @@
       "pillar": "ME",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_ojv0998",
@@ -9228,7 +9228,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": "Rejected"
+      "status": "Offered"
     },
     {
       "id": "comment_ojaxhhl",
@@ -9326,7 +9326,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_ojbg0a4",
@@ -10600,7 +10600,7 @@
       "pillar": null,
       "scholarship": "Need-based",
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1szk75w",
@@ -11118,7 +11118,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oizrljb",
@@ -11202,7 +11202,7 @@
       "pillar": "ChE",
       "scholarship": "Need-based",
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1sz5bzo",
@@ -12098,7 +12098,7 @@
       "pillar": "CSE",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1syrbm0",
@@ -12742,7 +12742,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1sxrgu0",
@@ -13008,7 +13008,7 @@
       "pillar": "CSE",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_oil8fpl",
@@ -15486,7 +15486,7 @@
       "pillar": "CE",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1snfnu2",
@@ -16158,7 +16158,7 @@
       "pillar": "ME",
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_on0nqfc",
@@ -16186,7 +16186,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1tjdmf5",
@@ -16368,7 +16368,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_ofr3tcb",
@@ -19098,7 +19098,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "comment_obc6av7",
@@ -19476,7 +19476,7 @@
       "pillar": null,
       "scholarship": null,
       "nationality": null,
-      "status": null
+      "status": "Offered"
     },
     {
       "id": "post_1rmlohj",
