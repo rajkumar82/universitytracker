@@ -1,0 +1,64 @@
+{
+  "name": "SNU Noida",
+  "urls": [
+    "https://www.reddit.com/r/snunoida/"
+  ],
+  "max_age_days": 10,
+  "data_file": "data/results.json",
+  "report_file": "data/report.html",
+  "keywords": {
+    "pillars": {
+      "CSE": ["\\bcse\\b", "computer science and engineering", "computer science engineering"],
+      "ECE": ["\\bece\\b", "electrical and computer engineering", "electrical engineering"],
+      "ME": ["\\bme\\b", "mechanical engineering"],
+      "CE": ["\\bce\\b", "civil engineering"],
+      "ChE": ["\\bche\\b", "chemical engineering", "biochemical engineering"],
+      "BSc": ["\\bbsc\\b", "b\\.sc", "bachelor of science", "bsc research"],
+      "BA": ["\\bba\\b", "b\\.a\\b", "bachelor of arts", "ba research"],
+      "BMS": ["\\bbms\\b", "business management", "business studies"],
+      "MBA": ["\\bmba\\b", "master of business"],
+      "MSc": ["\\bmsc\\b", "m\\.sc", "master of science"],
+      "PhD": ["\\bphd\\b", "ph\\.d", "doctorate", "doctoral program"]
+    },
+    "scholarships": {
+      "Band A (100%)": ["band a", "100% tuition", "full tuition waiver", "full scholarship"],
+      "Band B (75%)": ["band b", "75% tuition", "75% waiver"],
+      "Band C (50%)": ["band c", "50% tuition", "50% waiver"],
+      "School Topper": ["school topper scholarship", "class 12 topper", "topper scholarship"],
+      "Need-based": ["need.?based", "financial aid", "income.{1,10}scholarship"],
+      "Sports": ["sports scholarship", "sports quota"],
+      "Women in BTech": ["women.{1,10}btech", "women.{1,10}scholarship", "female.{1,10}scholarship"],
+      "Armed Forces": ["armed forces", "defence scholarship", "military scholarship"],
+      "None": ["no scholarship", "self.?fund", "without scholarship", "paying full", "full fees"]
+    },
+    "nationalities": {
+      "Indian": ["\\bindian\\b", "india", "\\bdomestic\\b", "nri"],
+      "International": ["international", "foreigner", "overseas", "abroad"]
+    },
+    "statuses": {
+      "Offered": [
+        "i (got|received|got an|received an) (offer|admission offer|conditional offer)",
+        "i('ve| have) (been offered|been accepted|been admitted|received an offer|got an offer)",
+        "i got (in|into) snu",
+        "i (was|am) (offered|accepted|admitted)",
+        "(received|got) my (offer|admission)",
+        "just (got|received) (my )?(offer|admission)",
+        "i('m| am) (in|going to snu)",
+        "got offered (a |an )?(seat|place|spot|scholarship)",
+        "got (a |an )?(offer|admission offer|conditional offer)",
+        "snu (gave|sent|offered) me (a |an )?(offer|seat|place|spot)"
+      ],
+      "Rejected": [
+        "i (got|was|have been) (rejected|rej)",
+        "i did(n't| not) (get|receive) (an? )?(offer|admission)",
+        "i (didn't|did not) get (in|into)",
+        "(rejected|no offer) (from|by) snu",
+        "got (rejected|rej) (from|by) snu"
+      ],
+      "Waitlisted": [
+        "i (was|got|am) (put on |on the )?wait.?list",
+        "i('ve| have) been wait.?listed"
+      ]
+    }
+  }
+}

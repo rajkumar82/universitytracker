@@ -1,15 +1,20 @@
 {
+  "name": "Plaksha",
   "urls": [
     "https://www.reddit.com/r/plaksha/"
   ],
-  "max_age_days": 60,
+  "max_age_days": 10,
   "data_file": "data/results.json",
   "report_file": "data/report.html",
   "keywords": {
     "pillars": {
-      "BTech": ["\\bbtech\\b", "b\\.tech", "bachelor of technology", "undergraduate program"],
-      "MTech": ["\\bmtech\\b", "m\\.tech", "master of technology", "postgraduate program"],
-      "Fellowship": ["\\bfellowship\\b", "plaksha fellowship", "tech leaders fellowship"]
+      "CS & AI": ["\\bcsai\\b", "cs.{1,5}ai\\b", "computer science.{1,10}artificial intelligence", "cs and ai"],
+      "Robotics & Autonomous Systems": ["\\bras\\b", "robotics.{1,10}autonomous", "autonomous systems"],
+      "Biological Systems Engineering": ["\\bbse\\b", "biological systems", "biosystems"],
+      "Data Science, Economics & Business": ["\\bdseb\\b", "data science.{1,10}economics", "data science.{1,10}business"],
+      "MS AI": ["\\bms.{1,3}ai\\b", "master.{1,10}artificial intelligence", "master of science.{1,10}ai"],
+      "Tech Leaders Fellowship": ["\\btlf\\b", "tech leaders fellowship", "tech leader.{1,10}fellowship"],
+      "PhD": ["\\bphd\\b", "ph\\.d", "doctorate", "doctoral program"]
     },
     "scholarships": {
       "Merit": ["merit scholarship", "merit award", "academic scholarship"],

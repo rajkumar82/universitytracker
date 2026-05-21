@@ -58,8 +58,9 @@ def run_folder(folder):
 
     print(f"\nDone — {total_added} new record(s) added")
     print_summary(data["records"], total_added)
-    generate(data, report_file)
-    print(f"Report → {report_file}")
+    title = settings.get("name", os.path.basename(folder).replace("_", " ").title())
+    generate(data, report_file, title=title)
+    print(f"Report: {report_file}")
 
 
 def run():

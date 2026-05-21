@@ -69,7 +69,7 @@ def _table_rows(records):
     return "".join(rows)
 
 
-def generate(data, output_path="data/report.html"):
+def generate(data, output_path="data/report.html", title="Admission Tracker"):
     records = data.get("records", [])
     total = len(records)
     last_updated = data.get("last_updated", "—")
@@ -85,7 +85,7 @@ def generate(data, output_path="data/report.html"):
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>SUTD Admission Tracker</title>
+<title>{title} Admission Tracker</title>
 <style>
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{font-family:system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:24px}}
@@ -126,7 +126,7 @@ def generate(data, output_path="data/report.html"):
 </style>
 </head>
 <body>
-<h1>SUTD Admission Tracker</h1>
+<h1>{title} Admission Tracker</h1>
 <p class="subtitle">Last updated: {last_updated} UTC &nbsp;|&nbsp; Source: Reddit</p>
 
 <div class="cards">
@@ -231,4 +231,4 @@ renderRows(ALL);
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"Report saved → {output_path}")
+    print(f"Report saved: {output_path}")

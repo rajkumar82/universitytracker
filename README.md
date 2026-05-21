@@ -8,6 +8,7 @@ Scrapes Reddit to track admission offers, rejections, scholarships, and pillar b
 |---|---|---|
 | SUTD | [sutd.edu.sg](https://www.sutd.edu.sg) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/universities/sutd/data/report.html) |
 | Plaksha | [plaksha.org](https://plaksha.org) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/universities/plaksha/data/report.html) |
+| SNU Noida | [snu.edu.in](https://snu.edu.in) | [View Report](https://htmlpreview.github.io/?https://github.com/rajkumar82/universitytracker/blob/master/universities/snu_noida/data/report.html) |
 
 ## Setup
 
