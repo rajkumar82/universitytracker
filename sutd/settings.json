@@ -1,0 +1,60 @@
+{
+  "urls": [
+    "https://www.reddit.com/r/sutd/"
+  ],
+  "max_age_days": 60,
+  "data_file": "data/results.json",
+  "report_file": "data/report.html",
+  "keywords": {
+    "pillars": {
+      "CSD/ISTD": ["istd", "\\bcsd\\b", "computer science and design", "information systems technology", "information systems and design", "infocomm", "infosys"],
+      "ESD": ["\\besd\\b", "engineering systems and design", "engineering systems design", "systems design"],
+      "ASD": ["\\basd\\b", "architecture and sustainable design", "\\barchitecture\\b", "\\barch\\b"],
+      "EPD": ["\\bepd\\b", "engineering product development", "product development", "product design"],
+      "DAI": ["\\bdai\\b", "design and ai", "design and artificial intelligence", "design ai"],
+      "SMT": ["\\bsmt\\b", "science.{1,5}mathematics.{1,5}technology"]
+    },
+    "scholarships": {
+      "MOE": ["moe scholarship", "moe tuition grant"],
+      "SUTD Merit": ["sutd merit", "sutd scholarship", "sutd award", "undergraduate merit scholarship"],
+      "Trailblazer": ["trailblazer scholarship", "trailblazer award", "\\btrailblazer\\b"],
+      "SAF": ["saf scholarship", "mindef scholarship", "safos"],
+      "A*STAR": ["a\\*star", "astar scholarship"],
+      "PSC": ["psc scholarship", "public service commission"],
+      "Temasek": ["temasek scholarship", "temasek foundation"],
+      "ASEAN": ["asean scholarship", "asean undergraduate"],
+      "Bond-free": ["bond.?free", "no bond"],
+      "None": ["no scholarship", "self.?fund", "without scholarship"]
+    },
+    "nationalities": {
+      "Singaporean": ["singaporean", "\\bsc\\b", "singapore citizen", "local student", "\\blocal\\b"],
+      "PR": ["\\bpr\\b", "permanent resident"],
+      "International": ["international", "\\bimg\\b", "foreigner", "overseas student"]
+    },
+    "statuses": {
+      "Offered": [
+        "i (got|received|got an|received an) (offer|admission offer|conditional offer)",
+        "i('ve| have) (been offered|been accepted|been admitted|received an offer|got an offer)",
+        "i got (in|into) sutd",
+        "i (was|am) (offered|accepted|admitted)",
+        "(received|got) my (offer|admission)",
+        "just (got|received) (my )?(offer|admission)",
+        "i('m| am) (in|going to sutd)",
+        "got offered (a |an )?(seat|place|spot|scholarship)",
+        "got (a |an )?(offer|admission offer|conditional offer)",
+        "sutd (gave|sent|offered) me (a |an )?(offer|seat|place|spot)"
+      ],
+      "Rejected": [
+        "i (got|was|have been) (rejected|rej)",
+        "i did(n't| not) (get|receive) (an? )?(offer|admission)",
+        "i (didn't|did not) get (in|into)",
+        "(rejected|no offer) (from sutd|by sutd)",
+        "got (rejected|rej) (from|by) sutd"
+      ],
+      "Waitlisted": [
+        "i (was|got|am) (put on |on the )?wait.?list",
+        "i('ve| have) been wait.?listed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"sutd-admission-tracker/1.0\" \"https://www.reddit.com/r/sutd/search.json?q=offer+OR+admitted+OR+rejected&restrict_sr=1&limit=5&sort=new&t=year\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); children=d['data']['children']; print\\(f'Posts found: {len\\(children\\)}'\\); [print\\(c['data']['title'][:80], '|', c['data']['created_utc']\\) for c in children[:5]]\")",
+      "Bash(curl -s -A \"sutd-admission-tracker/1.0\" -o \"d:/sutd/test_response.txt\" -w \"%{http_code}\" \"https://www.reddit.com/r/sutd/search.json?q=offer+OR+admitted+OR+rejected&restrict_sr=1&limit=5&sort=new&t=year\")"
+    ]
+  }
+}
