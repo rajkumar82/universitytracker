@@ -6,9 +6,6 @@ __pycache__/
 venv/
 env/
 
-# Data & reports (scraped output)
-*/data/results.json
-*/data/report.html
 
 # OS
 .DS_Store
