@@ -1,0 +1,51 @@
+{
+  "urls": [
+    "https://www.reddit.com/r/plaksha/"
+  ],
+  "max_age_days": 60,
+  "data_file": "data/results.json",
+  "report_file": "data/report.html",
+  "keywords": {
+    "pillars": {
+      "BTech": ["\\bbtech\\b", "b\\.tech", "bachelor of technology", "undergraduate program"],
+      "MTech": ["\\bmtech\\b", "m\\.tech", "master of technology", "postgraduate program"],
+      "Fellowship": ["\\bfellowship\\b", "plaksha fellowship", "tech leaders fellowship"]
+    },
+    "scholarships": {
+      "Merit": ["merit scholarship", "merit award", "academic scholarship"],
+      "Need-based": ["need.?based", "financial aid", "need based scholarship"],
+      "Full Scholarship": ["full scholarship", "100% scholarship", "full ride"],
+      "Partial Scholarship": ["partial scholarship", "50%", "partial aid"],
+      "None": ["no scholarship", "self.?fund", "without scholarship", "paying full"]
+    },
+    "nationalities": {
+      "Indian": ["\\bindian\\b", "india", "\\bdomestic\\b", "nri"],
+      "International": ["international", "foreigner", "overseas", "abroad"]
+    },
+    "statuses": {
+      "Offered": [
+        "i (got|received|got an|received an) (offer|admission offer|conditional offer)",
+        "i('ve| have) (been offered|been accepted|been admitted|received an offer|got an offer)",
+        "i got (in|into) plaksha",
+        "i (was|am) (offered|accepted|admitted)",
+        "(received|got) my (offer|admission)",
+        "just (got|received) (my )?(offer|admission)",
+        "i('m| am) (in|going to plaksha)",
+        "got offered (a |an )?(seat|place|spot|scholarship)",
+        "got (a |an )?(offer|admission offer|conditional offer)",
+        "plaksha (gave|sent|offered) me (a |an )?(offer|seat|place|spot)"
+      ],
+      "Rejected": [
+        "i (got|was|have been) (rejected|rej)",
+        "i did(n't| not) (get|receive) (an? )?(offer|admission)",
+        "i (didn't|did not) get (in|into)",
+        "(rejected|no offer) (from|by) plaksha",
+        "got (rejected|rej) (from|by) plaksha"
+      ],
+      "Waitlisted": [
+        "i (was|got|am) (put on |on the )?wait.?list",
+        "i('ve| have) been wait.?listed"
+      ]
+    }
+  }
+}
